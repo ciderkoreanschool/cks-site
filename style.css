@@ -1,0 +1,235 @@
+/* ベース設定 */
+:root {
+    --primary-color: #00acc1; /* サイダーブルー */
+    --secondary-color: #e0f7fa; /* 薄い水色 */
+    --accent-color: #ff9800; /* ボタン用オレンジ */
+    --text-color: #333333;
+    --bg-light: #f9f9f9;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* ヘッダー周り */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* ボタンデザイン */
+.btn-primary, .btn-secondary, .btn-trial-header {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-trial-header {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px rgba(255, 152, 0, 0.3);
+}
+
+.btn-secondary {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* 共通セクション設定 */
+.section-padding {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.bg-light {
+    background-color: var(--bg-light);
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+/* ヒーローセクション */
+.hero {
+    background-color: var(--secondary-color);
+    padding: 150px 20px 100px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.hero-sub {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* リスト・グリッドレイアウト */
+.check-list {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.check-list li {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-left: 5px solid var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.feature-grid, .voice-grid, .trial-steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-card, .voice-card, .step {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    flex: 1;
+    min-width: 250px;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+/* 料金テーブル */
+.pricing-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.pricing-table th, .pricing-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.pricing-table th {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.popular-row {
+    background-color: #fff3e0; /* 薄いオレンジ */
+    font-weight: bold;
+}
+
+.badge {
+    background-color: red;
+    color: white;
+    font-size: 0.8rem;
+    padding: 3px 8px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+/* キャンペーンボックス */
+.campaign-box {
+    border: 3px dashed var(--accent-color);
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* CTAエリア */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+footer {
+    background-color: var(--text-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* スマホ対応 (メディアクエリ) */
+@media (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        padding: 10px;
+    }
+    nav {
+        margin: 10px 0;
+    }
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+}
