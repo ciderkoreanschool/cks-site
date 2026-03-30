@@ -11,11 +11,32 @@
     <header id="header">
         <div class="header-inner">
             <div class="logo">🥤 サイダー韓国語教室</div>
-            <nav>
-                <a href="#features" class="nav-link">特徴</a>
-                <a href="#pricing" class="nav-link">料金</a>
-                <a href="#voices" class="nav-link">生徒さんの声</a>
-            </nav>
+
+                <!-- ヘッダーロゴ -->
+                <!-- <div class="logo">ハンバーガーメニュー</div> -->
+                
+                <!-- ハンバーガーメニュー部分 -->
+                <div class="nav">
+                
+                    <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                    <input id="drawer_input" class="drawer_hidden" type="checkbox">
+                
+                    <!-- ハンバーガーアイコン -->
+                    <label for="drawer_input" class="drawer_open"><span></span></label>
+                
+                    <!-- メニュー -->
+                    <nav class="nav_content">
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="#features" class="nav-link">初めての方へ</a></li>
+                        <li class="nav_item"><a href="#features" class="nav-link">レッスンの特徴</a></li>
+                        <li class="nav_item"><a href="#pricing" class="nav-link">料金プラン</a></li>
+                        <li class="nav_item"><a href="#voices" class="nav-link">生徒さんの声</a></li>
+                        <li class="nav_item"><a href="#features" class="nav-link">よくあるご質問</a></li>
+                    </ul>
+                    </nav>
+            
+                </div>
+
             <a href="#trial" class="btn-trial-header">無料体験はこちら</a>
         </div>
     </header>
@@ -70,11 +91,11 @@
             </div>
             <div class="voice-card">
                 <h4>✈️ 旅行で韓国人と話ができた！</h4>
-                <p>「チキン屋で見知らぬ韓国人と話す機会があり、『韓国語の勉強、ちゃんとやってるね』と褒められました！」</p>
+                <p>「チキン屋で見知らぬ韓国人と話す機会があり、<br>『韓国語の勉強、しっかりされているんですね』と褒められました！」</p>
             </div>
             <div class="voice-card">
                 <h4>💯 TOPIK I・II 高得点合格！</h4>
-                <p>「4級（聞き取り97/読解97）合格！」「2級（聞き取り77/読解77）合格！先生がいなければ今でも会話できません！」</p>
+                <p>「4級（聞き取り97/読解97）合格！」<br><br>「2級（聞き取り77/読解77）合格！<br>先生がいなければ今でも会話できません！」</p>
             </div>
         </div>
     </section>
@@ -95,35 +116,45 @@
                 <tr><td>2回</td><td>9,500円</td><td>4,750円</td></tr>
                 <tr><td>3回</td><td>13,500円</td><td>4,500円</td></tr>
                 <tr><td>4回</td><td>17,000円</td><td>4,250円</td></tr>
-                <tr class="popular-row"><td>5回 <span class="badge">一番人気!</span></td><td>20,000円</td><td>4,000円</td></tr>
+                <tr class="popular-row"><td>5回<br><span class="badge">人気!</span></td><td>20,000円</td><td>4,000円</td></tr>
             </tbody>
         </table>
         
         <div class="campaign-box">
             <h3>🎁 お友達紹介キャンペーン</h3>
-            <p>お友だちを紹介し、その方が1か月登録すると、<strong>紹介者様は授業が1回無料</strong>になります！</p>
+            <p>お友だちを紹介し,
+                その方が1か月登録すると、<br><strong>紹介者様は授業が1回無料</strong>になります！</p>
         </div>
     </section>
 
     <section id="trial" class="trial section-padding">
         <h2>まずは無料体験授業（55分）へ！</h2>
-        <p>初心者の方も、学習経験がある方もOK🙆‍♀️ レベルや目的に合わせてしっかり体験できます。</p>
+        <p>✔体験レッスンでも通常レッスンと同じ55分間、学習経験に合わせて内容を調整して実施します。</p>
+        <p>✔初心者の方も、学習経験がある方もOK🙆‍♀️<br>レベルや目的に合わせてしっかり体験できます。</p>
         
         <div class="trial-steps">
             <div class="step">
-                <h4>初心者向け</h4>
-                <p>ハングルの基本（子音・母音）や発音練習など、基礎から優しくスタート。</p>
+                <h4>韓国語がまったく初めての方は？</h4>
+                <p>※予備知識ゼロでも大丈夫です</p>
+                <p>・ハングルの基本(子音・母音)</p>
+                <p>・発音練習(韓国語の音に慣れる)</p>
+                <p>・オンラインレッスンの進め方</p>
+                <p>・学習目的、不安点の確認</p>
             </div>
             <div class="step">
-                <h4>経験者向け</h4>
-                <p>挨拶や自己紹介でレベルチェック。学習目的や悩みに合わせたプランをご提案。</p>
+                <h4>韓国語を学んだことがある人は？</h4>
+                <p>※レベル、目的に合わせて進めます</p>
+                <p>・挨拶、自己紹介でレベルチェック</p>
+                <p>・学習目的、悩みの確認</p>
+                <p>・オンラインレッスンの進め方</p>
+                <p>・今後の学習プラン提案</p>
             </div>
         </div>
 
         <div class="cta-area">
             <h3>申請方法は2パターン📱</h3>
             <div class="cta-buttons">
-                <a href="#" class="btn-secondary">方法① DMで申請<br><small>「無料体験」と送るだけ！</small></a>
+                <a href="#" class="btn-secondary">方法① Instagram<br>DMで申請<br><small>「無料体験」と送るだけ！</small></a>
                 <a href="#" class="btn-primary">方法② 専用フォームから申請<br><small>※こちらの方がスムーズです！</small></a>
             </div>
         </div>
