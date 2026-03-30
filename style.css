@@ -77,14 +77,14 @@ body {
   
 /* メニューのデザイン*/
 .nav_content {
-  width: 100%;
-  height: 100%;
   position: fixed;
   top: 0;
-  left: 100%; /* メニューを画面の外に飛ばす */
-  z-index: 99;
+  left: 100%;
+  width: 100%;
+  height: 100%;
   background: #fff;
-  transition: .5s;
+  transition: 0.3s;
+  padding-top: 80px;
 }
 
 /* メニュー黒ポチを消す */
@@ -97,6 +97,24 @@ body {
   left: 0;/* メニューを画面に入れる */
 }
 
+
+/* 初期状態（PC） */
+.nav-sp {
+  display: none;
+}
+
+/* スマホ */
+@media (max-width: 768px) {
+
+  .nav-pc {
+    display: none;
+  }
+
+  .nav-sp {
+    display: block;
+  }
+
+}
 
 
 /* ヘッダー周り */
@@ -111,15 +129,29 @@ header {
 }
 
 .header-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-pc .nav_list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-pc a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
 }
 
 .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-items: right;
+    color: var(--primary-color);
+}
+.nav {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary-color);
@@ -307,7 +339,7 @@ footer {
 /* スマホ対応 (メディアクエリ) */
 @media (max-width: 768px) {
     .header-inner {
-        flex-direction: column;
+        flex-direction: row; /* or 削除 */
         padding: 10px;
     }
     nav {
