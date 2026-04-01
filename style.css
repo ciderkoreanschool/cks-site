@@ -1,11 +1,22 @@
 /* ベース設定 */
 :root {
-    --primary-color: #00acc1; /* サイダーブルー */
-    --secondary-color: #e0f7fa; /* 薄い水色 */
+    --primary-color: #2dd184; /* サイダー */
+    --secondary-color: #ffffff; /* 白 */
     --accent-color: #ff9800; /* ボタン用オレンジ */
     --text-color: #333333;
     --bg-light: #f9f9f9;
 }
+
+/* イメージ設定 */
+.logo-img {
+  width: 100%;
+  max-width: 300px;
+}
+.koe_pic-img {
+  width: 100%;
+  max-width: 300px;
+}
+
 
 body {
     font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
@@ -348,4 +359,14 @@ footer {
     .hero h1 {
         font-size: 1.5rem;
     }
+}
+.trial {
+  text-align: center; /* 見出しなどは中央 */
+}
+
+.trial-steps {
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: left;
+  line-height: 1.8;
 }
