@@ -31,3 +31,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// ハンバーガー押したあと閉じる（UX改善）
+const links = document.querySelectorAll('.nav-sp a');
+
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('drawer_input').checked = false;
+  });
+});

@@ -128,6 +128,11 @@ body {
 }
 
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* ヘッダー周り */
 header {
     background-color: #ffffff;
@@ -369,4 +374,102 @@ footer {
   margin: 40px auto;
   text-align: left;
   line-height: 1.8;
+}
+
+/* --- 追加セクション：講師・運営紹介 --- */
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-top: 5px solid var(--primary-color);
+    text-align: left;
+}
+
+.about-text h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+/* --- 追加セクション：SNS動画 --- */
+.sns-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 30px auto 0;
+}
+
+.sns-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    width: 250px;
+}
+
+.sns-dummy-video {
+    background-color: #eee;
+    height: 350px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sns-card p {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* --- 追加セクション：よくある質問（FAQ） --- */
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    background: #fff;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.faq-item summary {
+    padding: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--bg-light);
+    color: var(--text-color);
+    list-style: none; /* デフォルトの三角を消す設定 */
+    position: relative;
+}
+
+/* カスタムのアコーディオンアイコン */
+.faq-item summary::after {
+    content: "＋";
+    position: absolute;
+    right: 20px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.faq-item[open] summary::after {
+    content: "－";
+}
+
+.faq-item p {
+    padding: 20px;
+    margin: 0;
+    border-top: 1px dashed #ddd;
+    background-color: #fff;
 }
